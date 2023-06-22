@@ -1,0 +1,4 @@
+demo:
+  context:
+    exclude:
+      - httpStatus: 2xx
