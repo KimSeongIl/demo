@@ -1,9 +1,20 @@
 HELP.md
 .gradle
-build/
+
+build/classes/
+build/generated/
+build/kotlin/
+build/libs/
+build/native/
+build/snapshot/
+build/tmp/
+
+
+
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+
 
 ### STS ###
 .apt_generated
