@@ -2,13 +2,18 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
 
-	id("org.springframework.boot") version "3.1.0"
+	id("org.springframework.boot") version "3.1.2"
 	id("io.spring.dependency-management") version "1.1.0"
 	kotlin("jvm") version "1.8.21"
 	kotlin("plugin.spring") version "1.8.21"
 	kotlin("plugin.noarg") version "1.8.21"
 	kotlin("kapt") version "1.8.21"
 	id("org.graalvm.buildtools.native") version "0.9.20"
+	id("application")
+}
+
+application {
+	mainClass.set("com.demo.search.middle.demo.DemooApplicationKt")
 }
 
 group = "com.example"
@@ -20,6 +25,7 @@ apply(plugin = "kotlin-kapt")
 repositories {
 	mavenLocal()
 	mavenCentral()
+	gradlePluginPortal()
 }
 
 dependencies {
