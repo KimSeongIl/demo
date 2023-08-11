@@ -6,7 +6,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Configuration
 
 @EnableConfigurationProperties(DemoContext::class)
-@RegisterReflectionForBinding(Pattern::class, Pattern.Flag::class)
+//@RegisterReflectionForBinding(Pattern::class, Pattern.Flag::class)
 @Configuration
 class DemoConfiguration(private val demoContext: DemoContext) {
 
